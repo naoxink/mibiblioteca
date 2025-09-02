@@ -1,0 +1,478 @@
+[
+  {
+    "titulo": "El arte de la intrusión",
+    "autor": "Kevin D. Mitnick y William L. Simon",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Hackers y situaciones increíbles, todo real."
+  },
+  {
+    "titulo": "Escape book",
+    "autor": "Ivan Tapia",
+    "estado": "Leído",
+    "puntuacion": "6/10",
+    "comentario": "Entretenido y original pero a veces se hace pesado."
+  },
+  {
+    "titulo": "¡Viven!",
+    "autor": "Piers Paul Read",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Brutal la historia, no se puede decir más."
+  },
+  {
+    "titulo": "La ley de Murphy",
+    "autor": "Arthur Bloch",
+    "estado": "Leído",
+    "puntuacion": "5/10",
+    "comentario": "Entretenido al principio. Muchas partes me parecen aburridas."
+  },
+  {
+    "titulo": "La historia de tu vida",
+    "autor": "Ted Chiang",
+    "estado": "Leído parcialmente",
+    "puntuacion": "4/10",
+    "comentario": "La única historia que más me ha llamado ha sido la famosa por la película (La llegada)."
+  },
+  {
+    "titulo": "Los fantasmas de Ascalon",
+    "autor": "Matt Forbeck & Jeff Grubb",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Si eres fan del universo Guild Wars te va a gustar seguro."
+  },
+  {
+    "titulo": "Lemmy: la autobiografía",
+    "autor": "Ian Killmister & Janiss Garza",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Impresionantes historias (y desfases) de la vida de Lemmy contadas por él mismo."
+  },
+  {
+    "titulo": "La rebelión de Lucifer",
+    "autor": "J.J. Benítez",
+    "estado": "Leído parcialmente",
+    "puntuacion": "4/10",
+    "comentario": "Comienza muy bien pero se le va yendo la cabeza con una droga máxima que deja de interesarme."
+  },
+  {
+    "titulo": "Metallica: toda la historia",
+    "autor": "Martin Popoff",
+    "estado": "Leído",
+    "puntuacion": "7/10",
+    "comentario": "Interesante si eres fan de Metallica. Recorrido por la discografía (hasta el momento de su salida) aunque se queda corto en contenido."
+  },
+  {
+    "titulo": "The complete art of Guild wars",
+    "autor": "ArenaNet",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Brutales diseños artísticos del mundo Guild Wars. Escasa información."
+  },
+  {
+    "titulo": "Metallica: back to the front",
+    "autor": "Matt Taylor",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Muy interesante y bastante contenido, a veces, quizás demasiado en profundidad."
+  },
+  {
+    "titulo": "Los fósiles",
+    "autor": "Gayrard-Valy",
+    "estado": "Leído",
+    "puntuacion": "6/10",
+    "comentario": "Interesante pero ha quedado bastante desfasado."
+  },
+  {
+    "titulo": "Dexter: el oscuro pasajero",
+    "autor": "Jeff Lindsay",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Muy buen ritmo, se lee muy fácil y rápido."
+  },
+  {
+    "titulo": "Dexter: querido dexter",
+    "autor": "Jeff Lindsay",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": ""
+  },
+  {
+    "titulo": "Dexter: dexter por dos",
+    "autor": "Jeff Lindsay",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": ""
+  },
+  {
+    "titulo": "Dexter: por decisión propia",
+    "autor": "Jeff Lindsay",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": ""
+  },
+  {
+    "titulo": "Dexter: el asesino exquisito",
+    "autor": "Jeff Lindsay",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Creo que este me pareció menos intrigante, pero ya volveré a modificar cuando recuerde más concretamente."
+  },
+  {
+    "titulo": "El ladrón de las sombras",
+    "autor": "Alexey Pehov",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Muy guay el mundo de esta saga. Fantasía medieval en estado puro."
+  },
+  {
+    "titulo": "Rastreador de sombras",
+    "autor": "Alexey Pehov",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Sigue enganchando mucho en su segunda parte."
+  },
+  {
+    "titulo": "Tempestad de sombras",
+    "autor": "Alexey Pehov",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Engancha mucho y la historia llega a su punto álgido. El último cuarto del libro se hace bastante repetitivo y largo."
+  },
+  {
+    "titulo": "Guía de autoestopista galáctico",
+    "autor": "Douglas Adams",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Humor y creatividad fuera de los límites conocidos. Brutal."
+  },
+  {
+    "titulo": "El restaurante del fin del mundo",
+    "autor": "Douglas Adams",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Sigue en su línea: humor y aventuras extraterrestres."
+  },
+  {
+    "titulo": "La vida, el universo y todo lo demás",
+    "autor": "Douglas Adams",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Sigue siendo una maravilla. Me asombra la creatividad de este autor."
+  },
+  {
+    "titulo": "Hasta luego, y gracias por el pescado",
+    "autor": "Douglas Adams",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": ""
+  },
+  {
+    "titulo": "Informe sobre la tierra: fundamentalmente inofensiva",
+    "autor": "Douglas Adams",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": ""
+  },
+  {
+    "titulo": "y una cosa más...",
+    "autor": "Eoin Colfer",
+    "estado": "Leído",
+    "puntuacion": "6/10",
+    "comentario": "Para nada comparable a la saga de Douglas Adams. El final ya es insufrible."
+  },
+  {
+    "titulo": "Los hijos de Anansi",
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": "9/10",
+    "comentario": "Temática dioses entre humanos. La historia engancha bastante y tiene buen ritmo. Se lee rápido."
+  },
+  {
+    "titulo": "Objetos frágiles",
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Historias cortas, cada una más creativa que la anterior. Se lee rápido."
+  },
+  {
+    "titulo": "Mitos nórdicos",
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Historias cortas geniales de la mitología nórdica contadas por el maestro Neil Gaiman."
+  },
+  {
+    "titulo": "Invocaciones",
+    "autor": "Neil Gaiman & Santiago Caruso",
+    "estado": "Leído",
+    "puntuacion": "7/10",
+    "comentario": "Historias fuera de lo común y sus brutales ilustraciones. Se me hace demasiado corto."
+  },
+  {
+    "titulo": "Dios ha vuelto",
+    "autor": "Orcar Fábrega",
+    "estado": "Leído",
+    "puntuacion": "8/10",
+    "comentario": "Religiones de todo tipo que no llegamos ni a imaginar que podrían existir. Muy curioso."
+  },
+  {
+    "titulo": "La Biblia Satánica",
+    "autor": "Anton Szandor LaVey",
+    "estado": "Leído",
+    "puntuacion": "7/10",
+    "comentario": "Muy interesante y bastante información curiosa. Hacia el final, con las invocaciones me parece que se va demasiado de madre."
+  },
+  {
+    "titulo": "Juegos de estado",
+    "autor": "Tom Clancy",
+    "estado": "Sin leer",
+    "puntuacion": null,
+    "comentario": ""
+  },
+  {
+    "titulo": "Evangelios apócrifos: tomo 1",
+    "autor": "Anónimo (Ed. Humanitas, S.L.)",
+    "estado": "Leído parcialmente",
+    "puntuacion": null,
+    "comentario": ""
+  },
+  {
+    "titulo": "Miles gloriosus",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Dioses y mitos del antiguo Egipto",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mitología nórdica",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Oráculos griegos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "En busca de la felicidad",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "El discurso del método",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "La Odisea",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Santa muerte",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "El libro tibetano de los muertos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Conjuras, tierras planas y lagartos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "La mano negra",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Historia de la brujería",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Los mitos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Divina comedia",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "El libro de los símbolos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Ciencia loca",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Jurassic Park: la película",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Will",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "La Biblia según Dios",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Crónicas urbanas",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Neverwhere",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Stardust",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: El imperio final",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: El pozo de la ascensión",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: El héroe de las eras",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: Aleación de ley",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: Sombras de identidad",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: Brazales de duelo",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mistborn: El metal perdido",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "American Gods",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "La Biblia",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Summa Daemoniaca",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "El libro egipcio de los muertos",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  },
+  {
+    "titulo": "Mitología hindú",
+    "autor": null,
+    "estado": null,
+    "puntuacion": null,
+    "comentario": null
+  }
+]
