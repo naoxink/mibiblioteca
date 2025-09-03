@@ -3,9 +3,9 @@ body {
   margin: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  justify-content: center;  /* Centrar el contenido en el eje vertical */
-  align-items: center;      /* Centrar el contenido en el eje horizontal */
+  gap: 20px;  /* Más espacio entre tarjetas */
+  justify-content: flex-start; /* Alineación vertical de contenido */
+  align-items: center;  /* Centrar el contenido horizontalmente */
 }
 
 input, select {
@@ -31,9 +31,9 @@ input, select {
   gap: 12px;
   margin-bottom: 20px;
   background-color: #ffffff; /* Fondo blanco */
-  width: 33%;              /* Ajusta el ancho al 33% de la pantalla */
-  max-width: 500px;        /* Limita el ancho máximo */
-  box-sizing: border-box;  /* Asegura que padding no afecte el tamaño */
+  width: 100%;              /* Ocupa el 100% del ancho disponible */
+  max-width: 450px;         /* Maximo ancho de la tarjeta */
+  box-sizing: border-box;   /* Asegura que padding no afecte el tamaño total */
 }
 
 .book .title {
@@ -84,17 +84,18 @@ label, select {
 @media (max-width: 600px) {
   body {
     margin: 4px;
+    align-items: center;  /* Centrar contenido en dispositivos móviles */
   }
 
   .book {
-    gap: 10px;
+    gap: 16px;
     padding: 12px;
-    width: 90%;             /* Ocupa el 90% de la pantalla en móviles */
-    max-width: 500px;       /* Mantiene un máximo ancho */
+    width: 90%;             /* Ocupa el 90% del ancho disponible en móviles */
+    max-width: 400px;       /* Límite de ancho en móviles */
   }
 
   .title {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 8px;
   }
 
@@ -102,7 +103,7 @@ label, select {
     font-size: 12px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
   }
 
   .progreso-container {
