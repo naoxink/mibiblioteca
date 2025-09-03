@@ -5,9 +5,8 @@ input { width: 100%; padding: 6px; margin-bottom: 10px; font-size: 14px; box-siz
   padding: 6px 0;
   border-bottom: 1px solid #eee;
   display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
 }
 .title {
   font-size: 1em;
@@ -22,12 +21,15 @@ input { width: 100%; padding: 6px; margin-bottom: 10px; font-size: 14px; box-siz
   color: #444;
   font-size: 13px;
   line-height: 1.3;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  align-items: start;
 }
-.progreso-container { width: 100%; margin-top: 2px; }
+.meta > div, .meta > span, .meta > br {
+  grid-column: span 2;
+}
+.progreso-container { width: 100%; margin-top: 2px; grid-column: span 2; }
 .progreso-barra { border: 1px solid #ddd; background:#f7f7f7; border-radius:3px; height:8px; width:100%; overflow:hidden; }
 .progreso-barra-relleno { background:#4caf50; height:100%; }
 label, select { font-size: 13px; margin-right: 6px; }
@@ -36,7 +38,6 @@ select { padding: 2px 6px; }
 @media (max-width: 600px) {
   body { margin: 4px; }
   .book {
-    flex-direction: column;
     gap: 2px;
     padding: 5px 0;
   }
@@ -48,7 +49,9 @@ select { padding: 2px 6px; }
   }
   .meta {
     font-size: 12px;
-    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
   .progreso-container { width: 100%; }
   .stats { font-size: 12px; }
