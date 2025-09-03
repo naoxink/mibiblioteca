@@ -4,6 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  justify-content: center;  /* Centrar el contenido en el eje vertical */
+  align-items: center;      /* Centrar el contenido en el eje horizontal */
 }
 
 input, select {
@@ -25,10 +27,13 @@ input, select {
   border: 1px solid #ddd;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /* Título arriba, contenido abajo */
   gap: 12px;
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Fondo blanco */
+  width: 33%;              /* Ajusta el ancho al 33% de la pantalla */
+  max-width: 500px;        /* Limita el ancho máximo */
+  box-sizing: border-box;  /* Asegura que padding no afecte el tamaño */
 }
 
 .book .title {
@@ -45,7 +50,7 @@ input, select {
   line-height: 1.4;
   color: #444;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
   gap: 8px 16px;
 }
 
@@ -84,6 +89,8 @@ label, select {
   .book {
     gap: 10px;
     padding: 12px;
+    width: 90%;             /* Ocupa el 90% de la pantalla en móviles */
+    max-width: 500px;       /* Mantiene un máximo ancho */
   }
 
   .title {
