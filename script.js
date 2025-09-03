@@ -1,34 +1,57 @@
 // Variables globales para ordenación
 let currentSort = { field: "progreso", asc: true };
 let allBooks = [];
+let filteredBooks = []; // Aquí almacenaremos los libros filtrados
 
 async function loadBooks() {
   const res = await fetch("data.json");
   allBooks = await res.json();
-  renderBooks(allBooks);
+  filteredBooks = [...allBooks]; // Inicializamos filteredBooks con todos los libros
+  renderBooks(filteredBooks); // Renderizamos los libros inicialmente
+
+  // Crear dinámicamente las opciones del desplegable de estado
+  const uniqueStates = [...new Set(allBooks.map(b => b.estado))];  // Obtener estados únicos
+  const filterStateDropdown = document.getElementById("filter-state");
+
+  uniqueStates.forEach(state => {
+    const option = document.createElement("option");
+    option.value = state;
+    option.textContent = state || "Sin estado"; // Agregar la opción "Sin estado" si es necesario
+    filterStateDropdown.appendChild(option);
+  });
 
   // Búsqueda
   document.getElementById("search").addEventListener("input", e => {
     const q = e.target.value.toLowerCase();
-    const filtered = allBooks.filter(b => {
+    filteredBooks = allBooks.filter(b => {
       return (
         (b.titulo && b.titulo.toLowerCase().includes(q)) ||
         (b.autor && b.autor.toLowerCase().includes(q)) ||
         (b.estado && b.estado.toLowerCase().includes(q))
       );
     });
-    renderBooks(filtered);
+    renderBooks(filteredBooks);
+  });
+
+  // Filtrado por estado
+  filterStateDropdown.addEventListener("change", e => {
+    const selectedState = e.target.value.toLowerCase();
+    filteredBooks = allBooks.filter(b => {
+      // Si no hay estado seleccionado, se muestran todos los libros
+      return selectedState === "" || (b.estado && b.estado.toLowerCase() === selectedState);
+    });
+    renderBooks(filteredBooks);
   });
 
   // Ordenación
   document.getElementById("sort-field").addEventListener("change", e => {
     currentSort.field = e.target.value;
-    renderBooks(allBooks);
+    renderBooks(filteredBooks);
   });
-  
+
   document.getElementById("sort-order").addEventListener("change", e => {
     currentSort.asc = e.target.value === "asc";
-    renderBooks(allBooks);
+    renderBooks(filteredBooks);
   });
 }
 
@@ -36,8 +59,8 @@ function renderBooks(list) {
   const container = document.getElementById("book-list");
   container.innerHTML = ""; // Limpiar la lista actual
 
-  const field = currentSort.field
-  const order = currentSort.asc ? 1 : -1
+  const field = currentSort.field;
+  const order = currentSort.asc ? 1 : -1;
 
   // Ordenar la lista
   const sorted = [...list].sort((a, b) => {
@@ -62,7 +85,7 @@ function renderBooks(list) {
     const div = document.createElement("div");
     div.className = "book";
 
-    if (!b.progreso) b.progreso = 0
+    if (!b.progreso) b.progreso = 0;
 
     // Crear la puntuación con estrellas llenas y vacías
     const filledStars = Math.floor(b.puntuacion);  // Número de estrellas llenas
@@ -95,6 +118,5 @@ function renderBooks(list) {
     container.appendChild(div);
   });
 }
-
 
 loadBooks();
