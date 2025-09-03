@@ -1,17 +1,31 @@
+// Variables globales para ordenación
+let currentSort = { field: "titulo", asc: true };
+let allBooks = [];
+
 async function loadBooks() {
   const res = await fetch("data.json");
-  const books = await res.json();
-  renderBooks(books);
+  allBooks = await res.json();
+  renderBooks(allBooks);
 
   // Búsqueda
   document.getElementById("search").addEventListener("input", e => {
     const q = e.target.value.toLowerCase();
-    const filtered = books.filter(b =>
+    const filtered = allBooks.filter(b =>
       Object.values(b).some(val =>
         val && val.toString().toLowerCase().includes(q)
       )
     );
     renderBooks(filtered);
+  });
+
+  // Ordenación
+  document.getElementById("sort-field").addEventListener("change", e => {
+    currentSort.field = e.target.value;
+    renderBooks(allBooks);
+  });
+  document.getElementById("sort-order").addEventListener("change", e => {
+    currentSort.asc = e.target.value === "asc";
+    renderBooks(allBooks);
   });
 }
 
@@ -19,11 +33,28 @@ function renderBooks(list) {
   const container = document.getElementById("book-list");
   container.innerHTML = "";
 
+  // Ordenar la lista
+  const sorted = [...list].sort((a, b) => {
+    let vA = a[currentSort.field] ?? "";
+    let vB = b[currentSort.field] ?? "";
+    // Convertir a número si corresponde
+    if (["puntuacion", "progreso"].includes(currentSort.field)) {
+      vA = Number(vA) || 0;
+      vB = Number(vB) || 0;
+    } else {
+      vA = vA.toString().toLowerCase();
+      vB = vB.toString().toLowerCase();
+    }
+    if (vA < vB) return currentSort.asc ? -1 : 1;
+    if (vA > vB) return currentSort.asc ? 1 : -1;
+    return 0;
+  });
+
   // Estadísticas
   const statsDiv = document.getElementById("stats");
-  const total = list.length;
+  const total = sorted.length;
   const porEstado = {};
-  list.forEach(b => {
+  sorted.forEach(b => {
     const estado = b.estado || "Sin estado";
     porEstado[estado] = (porEstado[estado] || 0) + 1;
   });
@@ -34,9 +65,8 @@ function renderBooks(list) {
   statsDiv.textContent = statsText;
 
   // Renderizado de libros
-  list.forEach(b => {
+  sorted.forEach(b => {
     const progreso = b.progreso ?? 0;
-    // Determina el color según el progreso
     let color;
     if (progreso < 30) {
       color = "tomato";
@@ -65,5 +95,8 @@ function renderBooks(list) {
     container.appendChild(div);
   });
 }
+
+// Agrega los controles de ordenación en tu HTML:
+
 
 loadBooks();

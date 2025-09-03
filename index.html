@@ -9,6 +9,22 @@
   <h1>📚 Mi librería</h1>
   <input type="text" id="search" placeholder="Filtrar libros...">
 
+  <!-- Controles de ordenación -->
+  <div style="margin-bottom: 1em;">
+    <label for="sort-field">Ordenar por:</label>
+    <select id="sort-field">
+      <option value="titulo">Título</option>
+      <option value="estado">Estado</option>
+      <option value="puntuacion">Puntuación</option>
+      <option value="progreso">Progreso</option>
+    </select>
+    <label for="sort-order">Orden:</label>
+    <select id="sort-order">
+      <option value="asc">Ascendente</option>
+      <option value="desc">Descendente</option>
+    </select>
+  </div>
+
   <div class="stats" id="stats"></div>
   <div id="book-list"></div>
 
