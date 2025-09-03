@@ -4,4 +4,6 @@ input { width: 100%; padding: 8px; margin-bottom: 15px; }
 .book { padding: 10px; border-bottom: 1px solid #ccc; }
 .title { font-size: 1.1em; font-weight: bold; }
 .meta { color: #555; }
-.progreso-container { width: 150px; }
+.progreso-container { width: 150px; margin-top: 5px; }
+.progreso-barra { border: 1px solid rgba(0, 0, 0, .2); background:#eee; border-radius:4px; height:10px; width:100%; overflow:hidden; }
+.progreso-barra-relleno { background:#4caf50; height:100%; }
