@@ -35,6 +35,16 @@ function renderBooks(list) {
 
   // Renderizado de libros
   list.forEach(b => {
+    const progreso = b.progreso ?? 0;
+    // Determina el color según el progreso
+    let color;
+    if (progreso < 30) {
+      color = "tomato";
+    } else if (progreso < 90) {
+      color = "gold";
+    } else {
+      color = "#4caf50";
+    }
     const div = document.createElement("div");
     div.className = "book";
     div.innerHTML = `
@@ -45,9 +55,9 @@ function renderBooks(list) {
         Puntuación: ${b.puntuacion || "N/A"}<br>
         Comentario: ${b.comentario || ""}
         <div class="progreso-container">
-          <div style="font-size:12px;">Progreso: ${b.progreso ?? 0}%</div>
+          <div style="font-size:12px;">Progreso: ${progreso}%</div>
           <div class="progreso-barra">
-            <div class="progreso-barra-relleno" style="width:${b.progreso ?? 0}%;"></div>
+            <div class="progreso-barra-relleno" style="width:${progreso}%; background:${color};"></div>
           </div>
         </div>
       </div>
