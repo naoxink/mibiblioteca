@@ -45,6 +45,12 @@ function renderBooks(list) {
         Puntuación: ${b.puntuacion || "N/A"}<br>
         Comentario: ${b.comentario || ""}
       </div>
+      <div class="progreso-container" style="margin-top:8px;">
+        <div style="font-size:12px;">Progreso: ${b.progreso ?? 0}%</div>
+        <div style="background:#eee; border-radius:4px; height:10px; width:100%; overflow:hidden;">
+          <div style="background:#4caf50; height:100%; width:${b.progreso ?? 0}%;"></div>
+        </div>
+      </div>
     `;
     container.appendChild(div);
   });
