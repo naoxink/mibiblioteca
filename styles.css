@@ -1,9 +1,11 @@
 body { font-family: Arial, sans-serif; margin: 20px; }
-input { width: 100%; padding: 8px; margin-bottom: 15px; }
-.stats { margin-bottom: 20px; font-weight: bold; }
-.book { padding: 10px; border-bottom: 1px solid #ccc; }
-.title { font-size: 1.1em; font-weight: bold; }
-.meta { color: #555; }
-.progreso-container { width: 150px; margin-top: 5px; }
-.progreso-barra { border: 1px solid rgba(0, 0, 0, .2); background:#eee; border-radius:4px; height:10px; width:100%; overflow:hidden; }
+input { width: 100%; padding: 6px; margin-bottom: 10px; font-size: 14px; }
+.stats { margin-bottom: 12px; font-weight: bold; font-size: 14px; }
+.book { padding: 7px 0; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 2px; }
+.title { font-size: 1em; font-weight: bold; margin-bottom: 2px; color: #222; }
+.meta { color: #444; font-size: 13px; line-height: 1.4; }
+.progreso-container { width: 120px; margin-top: 2px; }
+.progreso-barra { border: 1px solid #ddd; background:#f7f7f7; border-radius:3px; height:8px; width:100%; overflow:hidden; }
 .progreso-barra-relleno { background:#4caf50; height:100%; }
+label, select { font-size: 13px; margin-right: 6px; }
+select { padding: 2px 6px; }

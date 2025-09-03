@@ -68,7 +68,9 @@ function renderBooks(list) {
   sorted.forEach(b => {
     const progreso = b.progreso ?? 0;
     let color;
-    if (progreso < 30) {
+    if (progreso === 0) {
+      color = "lightgray";
+    } else if (progreso < 30) {
       color = "tomato";
     } else if (progreso < 90) {
       color = "gold";
@@ -81,8 +83,8 @@ function renderBooks(list) {
       <div class="title">${b.titulo}</div>
       <div class="meta">
         Autor: ${b.autor || "Desconocido"}<br>
-        Estado: ${b.estado || "Sin estado"}<br>
-        Puntuación: ${b.puntuacion || "N/A"}<br>
+        Estado: <span style="color:${color}">${b.estado || "Sin estado"}</span><br>
+        Puntuación: ${typeof b.puntuacion === "number" ? b.puntuacion + "/10" : "N/A"}<br>
         Comentario: ${b.comentario || ""}
         <div class="progreso-container">
           <div style="font-size:12px;">Progreso: ${progreso}%</div>
