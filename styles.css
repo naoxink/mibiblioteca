@@ -3,23 +3,23 @@ body {
   margin: 12px;
   display: flex;
   flex-direction: column;
-  gap: 20px;  /* Más espacio entre tarjetas */
-  justify-content: flex-start; /* Alineación vertical de contenido */
-  align-items: center;  /* Centrar el contenido horizontalmente */
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 input, select {
   width: 100%;
-  padding: 6px;
+  padding: 8px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px; /* Ajuste de tamaño para mayor legibilidad */
   box-sizing: border-box;
 }
 
 .stats {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;  /* Ajuste de tamaño para mayor legibilidad */
 }
 
 .book {
@@ -27,31 +27,30 @@ input, select {
   border: 1px solid #ddd;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;  /* Título arriba, contenido abajo */
-  gap: 12px;
+  flex-direction: column;
+  gap: 16px;
   margin-bottom: 20px;
-  background-color: #ffffff; /* Fondo blanco */
-  width: 100%;              /* Ocupa el 100% del ancho disponible */
-  max-width: 450px;         /* Maximo ancho de la tarjeta */
-  box-sizing: border-box;   /* Asegura que padding no afecte el tamaño total */
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px; /* Limitar el tamaño máximo */
+  box-sizing: border-box;
 }
 
 .book .title {
   font-size: 1.3em;
   font-weight: bold;
   color: #222;
-  min-width: 100%;
   word-break: break-word;
   margin-bottom: 12px;
 }
 
 .book .meta {
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 14px;  /* Ajuste de tamaño para mayor legibilidad */
+  line-height: 1.6;
   color: #444;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas */
-  gap: 8px 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
 }
 
 .book .meta > div {
@@ -77,25 +76,50 @@ input, select {
 }
 
 label, select {
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 6px;
+}
+
+@media (max-width: 900px) {
+  .book {
+    gap: 20px;
+    padding: 16px;
+    width: 85%;  /* Ocupa el 85% del ancho disponible en pantallas más pequeñas */
+    max-width: 400px;  /* Limite para pantallas medianas */
+  }
+
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .meta {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stats {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
   body {
     margin: 4px;
-    align-items: center;  /* Centrar contenido en dispositivos móviles */
+    align-items: center;
   }
 
   .book {
     gap: 16px;
     padding: 12px;
-    width: 90%;             /* Ocupa el 90% del ancho disponible en móviles */
-    max-width: 400px;       /* Límite de ancho en móviles */
+    width: 95%;
+    max-width: 350px;  /* Limite para pantallas pequeñas */
   }
 
   .title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 8px;
   }
 
@@ -111,10 +135,10 @@ label, select {
   }
 
   .stats {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   label, select {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
