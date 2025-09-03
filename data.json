@@ -274,55 +274,55 @@
   {
     "titulo": "Miles gloriosus",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 6,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Dioses y mitos del antiguo Egipto",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 8,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Mitología nórdica",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 8,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Oráculos griegos",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 6,
+    "comentario": "A veces se hace muy pesado.",
+    "progreso": 100
   },
   {
     "titulo": "En busca de la felicidad",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 7,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "El discurso del método",
     "autor": null,
-    "estado": null,
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 0
+    "progreso": 5
   },
   {
     "titulo": "La Odisea",
     "autor": null,
-    "estado": null,
+    "estado": "Sin leer",
     "puntuacion": null,
     "comentario": null,
     "progreso": 0
@@ -330,204 +330,217 @@
   {
     "titulo": "Santa muerte",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Buena calidad y geniales las ilustraciones.",
+    "progreso": 100
   },
   {
     "titulo": "El libro tibetano de los muertos",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Mucha droja pero bastante interesante.",
+    "progreso": 100
   },
   {
     "titulo": "Conjuras, tierras planas y lagartos",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 9,
+    "comentario": "Teorías flipantes de conspiración.",
+    "progreso": 100
   },
   {
     "titulo": "La mano negra",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 7,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Historia de la brujería",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 8,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Los mitos",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Muy espeso en varias ocasiones pero buen contenido.",
+    "progreso": 100
   },
   {
     "titulo": "Divina comedia",
     "autor": null,
-    "estado": null,
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 0
+    "progreso": 15
   },
   {
     "titulo": "El libro de los símbolos",
     "autor": null,
     "estado": null,
     "puntuacion": null,
-    "comentario": null,
+    "comentario": "Principalmente es un libro de consulta, no se trata de leerlo secuencualmente.",
     "progreso": 0
   },
   {
     "titulo": "Ciencia loca",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 5,
+    "comentario": "Experimentos curiosos pero ninguno es realmente reproducible en casa.",
+    "progreso": 100
   },
   {
     "titulo": "Jurassic Park: la película",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 8,
+    "comentario": "La película, en libro.",
+    "progreso": 100
   },
   {
     "titulo": "Will",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 8,
+    "comentario": "Fascinante la vida de Will Smith. Contada por él mismo. Muy recomendable.",
+    "progreso": 100
   },
   {
     "titulo": "La Biblia según Dios",
-    "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "autor": "@diotuitero",
+    "estado": "Leído",
+    "puntuacion": 8,
+    "comentario": "Resumen bastante preciso de la Biblia contada con un buen sentido del humor.",
+    "progreso": 100
   },
   {
     "titulo": "Crónicas urbanas",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 0
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Algunas historias son flipantes, otras bueno, no tanto.",
+    "progreso": 100
   },
   {
     "titulo": "Neverwhere",
-    "autor": null,
-    "estado": null,
-    "puntuacion": null,
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": 8,
     "comentario": null,
-    "progreso": 0
+    "progreso": 100
   },
   {
     "titulo": "Stardust",
-    "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": null,
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: El imperio final",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 9,
+    "comentario": null,
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: El pozo de la ascensión",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Mucho politiqueo y menos acción que el primero.",
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: El héroe de las eras",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 8,
+    "comentario": null,
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: Aleación de ley",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Comencé un poco escéptico con el tema de cambio de época tipo western pero al final me ha gustado bastante.",
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: Sombras de identidad",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": null,
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: Brazales de duelo",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": null,
+    "progreso": 100
   },
   {
     "titulo": "Mistborn: El metal perdido",
     "autor": null,
-    "estado": null,
+    "estado": "En pausa",
     "puntuacion": null,
-    "comentario": null
+    "comentario": null,
+    "progreso": 50
   },
   {
     "titulo": "American Gods",
-    "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "autor": "Neil Gaiman",
+    "estado": "Leído",
+    "puntuacion": 10,
+    "comentario": "De momento, mi libro favorito. Brutal.",
+    "progreso": 100
   },
   {
     "titulo": "La Biblia",
     "autor": null,
-    "estado": null,
+    "estado": "Leído parcialmente",
     "puntuacion": null,
-    "comentario": null
+    "comentario": null,
+    "progreso": 5
   },
   {
     "titulo": "Summa Daemoniaca",
     "autor": null,
-    "estado": null,
-    "puntuacion": null,
-    "comentario": null
+    "estado": "Leído",
+    "puntuacion": 9,
+    "comentario": "MUY interesante el mundo del exorcismo cristiano desde el punto de vista de un exorcista real.",
+    "progreso": 100
   },
   {
     "titulo": "El libro egipcio de los muertos",
     "autor": null,
-    "estado": null,
+    "estado": "En pausa",
     "puntuacion": null,
-    "comentario": null
+    "comentario": null,
+    "progreso": 30
   },
   {
     "titulo": "Mitología hindú",
     "autor": null,
-    "estado": null,
+    "estado": "En curso",
     "puntuacion": null,
-    "comentario": null
+    "comentario": null,
+    "progreso": 50
   }
 ]
