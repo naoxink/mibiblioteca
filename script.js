@@ -1,5 +1,5 @@
 // Variables globales para ordenación
-let currentSort = { field: "titulo", asc: true };
+let currentSort = { field: "progreso", asc: true };
 let allBooks = [];
 
 async function loadBooks() {
@@ -34,74 +34,67 @@ async function loadBooks() {
 
 function renderBooks(list) {
   const container = document.getElementById("book-list");
-  container.innerHTML = "";
+  container.innerHTML = ""; // Limpiar la lista actual
+
+  const field = currentSort.field
+  const order = currentSort.asc ? 1 : -1
 
   // Ordenar la lista
   const sorted = [...list].sort((a, b) => {
-    let vA = a[currentSort.field] ?? "";
-    let vB = b[currentSort.field] ?? "";
-    
-    if (["puntuacion", "progreso"].includes(currentSort.field)) {
-      vA = Number(vA) || -1; // -1 si es inválido
-      vB = Number(vB) || -1;
+    let vA = a[field] ?? "";
+    let vB = b[field] ?? "";
+
+    if (["puntuacion", "progreso"].includes(field)) {
+      vA = Number(vA) || 0;
+      vB = Number(vB) || 0;
     } else {
       vA = vA.toString().toLowerCase();
       vB = vB.toString().toLowerCase();
     }
-    
-    if (vA < vB) return currentSort.asc ? -1 : 1;
-    if (vA > vB) return currentSort.asc ? 1 : -1;
+
+    if (vA < vB) return order === 1 ? -1 : 1;
+    if (vA > vB) return order === 1 ? 1 : -1;
     return 0;
   });
 
-  // Estadísticas
-  const statsDiv = document.getElementById("stats");
-  const total = sorted.length;
-  const porEstado = {};
-  sorted.forEach(b => {
-    const estado = b.estado || "Sin estado";
-    porEstado[estado] = (porEstado[estado] || 0) + 1;
-  });
-  
-  let statsText = `Total: ${total}`;
-  for (const [estado, count] of Object.entries(porEstado)) {
-    statsText += ` | ${estado}: ${count}`;
-  }
-  statsDiv.textContent = statsText;
-
   // Renderizar los libros
   sorted.forEach(b => {
-    const progreso = b.progreso ?? 0;
-    let color;
-    if (progreso === 0) {
-      color = "lightgray";
-    } else if (progreso < 30) {
-      color = "tomato";
-    } else if (progreso < 90) {
-      color = "gold";
-    } else {
-      color = "#4caf50";
-    }
-
     const div = document.createElement("div");
     div.className = "book";
+
+    if (!b.progreso) b.progreso = 0
+
+    // Crear la puntuación con estrellas llenas y vacías
+    const filledStars = Math.floor(b.puntuacion);  // Número de estrellas llenas
+    const totalStars = 10;  // Total de estrellas posibles
+
+    let stars = '';
+    for (let i = 0; i < totalStars; i++) {
+      if (i < filledStars) {
+        stars += '<span class="filled">★</span>';  // Estrella llena
+      } else {
+        stars += '<span class="empty">☆</span>';  // Estrella vacía
+      }
+    }
+
     div.innerHTML = `
       <div class="title">${b.titulo}</div>
       <div class="meta">
-        <div>Autor: ${b.autor || "Desconocido"}</div>
-        <div>Estado: <span style="color:${color}">${b.estado || "Sin estado"}</span></div>
-        <div>Puntuación: ${typeof b.puntuacion === "number" ? b.puntuacion + "/10" : "N/A"}</div>
-        <div>Comentario: ${b.comentario || ""}</div>
+      <div>Autor: ${b.autor || "Desconocido"}</div>
+        <div>Puntuación: <span class="puntuacion">${stars}</span></div>
+        <div>Estado: ${b.estado || "Sin estado"}</div>
+        <div>Progreso: ${b.progreso}%</div>
         <div class="progreso-container">
-          <div style="font-size: 14px;">Progreso: ${progreso}%</div>
           <div class="progreso-barra">
-            <div class="progreso-barra-relleno" style="width:${progreso}%; background:${color};"></div>
+            <div class="progreso-barra-relleno" style="width:${b.progreso}%; background:${b.progreso < 30 ? 'tomato' : b.progreso < 90 ? 'gold' : '#4caf50'};"></div>
           </div>
         </div>
       </div>
+      <div class="comentario">${b.comentario || "No hay comentarios."}</div>
     `;
     container.appendChild(div);
   });
 }
+
 
 loadBooks();
