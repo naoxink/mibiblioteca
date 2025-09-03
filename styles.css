@@ -12,14 +12,14 @@ input, select {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
-  font-size: 16px; /* Ajuste de tamaño para mayor legibilidad */
+  font-size: 16px;
   box-sizing: border-box;
 }
 
 .stats {
   margin-bottom: 12px;
   font-weight: bold;
-  font-size: 16px;  /* Ajuste de tamaño para mayor legibilidad */
+  font-size: 16px;
 }
 
 .book {
@@ -32,7 +32,7 @@ input, select {
   margin-bottom: 20px;
   background-color: #ffffff;
   width: 100%;
-  max-width: 450px; /* Limitar el tamaño máximo */
+  max-width: 450px;
   box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@ input, select {
 }
 
 .book .meta {
-  font-size: 14px;  /* Ajuste de tamaño para mayor legibilidad */
+  font-size: 14px;
   line-height: 1.6;
   color: #444;
   display: grid;
@@ -84,8 +84,8 @@ label, select {
   .book {
     gap: 20px;
     padding: 16px;
-    width: 85%;  /* Ocupa el 85% del ancho disponible en pantallas más pequeñas */
-    max-width: 400px;  /* Limite para pantallas medianas */
+    width: 85%;
+    max-width: 400px;
   }
 
   .title {
@@ -113,18 +113,18 @@ label, select {
 
   .book {
     gap: 16px;
-    padding: 12px;
-    width: 95%;
-    max-width: 350px;  /* Limite para pantallas pequeñas */
+    padding: 16px;
+    width: 95%; /* Aumentamos el ancho a un 95% para aprovechar mejor el espacio */
+    max-width: 380px; /* Maximizamos el tamaño de la tarjeta sin hacerlo exagerado */
   }
 
   .title {
-    font-size: 1.1em;
+    font-size: 1.4em; /* Aumentamos el tamaño del título */
     margin-bottom: 8px;
   }
 
   .meta {
-    font-size: 12px;
+    font-size: 14px; /* Aumentamos el tamaño de la fuente para mejorar la legibilidad */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -135,10 +135,10 @@ label, select {
   }
 
   .stats {
-    font-size: 13px;
+    font-size: 14px; /* Aumentamos el tamaño de la fuente de las estadísticas */
   }
 
   label, select {
-    font-size: 13px;
+    font-size: 14px; /* Ajuste de tamaño de la fuente para etiquetas y selectores */
   }
 }
