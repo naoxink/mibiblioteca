@@ -542,5 +542,13 @@
     "puntuacion": null,
     "comentario": null,
     "progreso": 50
+  },
+  {
+    "titulo": "Por si las voces vuelven",
+    "autor": "Ángel Martín",
+    "estado": "Leído",
+    "puntuacion": 9,
+    "comentario": "Un libro que me lo leí en un suspiro. Redacción ligera, muy fácil de leer, ameno y con mucho humor aun siendo un tema muy serio.",
+    "progreso": 100
   }
 ]
