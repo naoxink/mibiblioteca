@@ -6,68 +6,53 @@
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   padding: 20px;
   flex-direction: column;
-  align-items: center;
-}
-
-input, select {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #AAA;
-  background-color: white;
-}
-
-.stats {
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
 }
 
 #book-list {
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.book, .books-header {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
   width: 100%;
-  max-width: 1200px;
+  text-align: left;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 10px;
 }
 
-.book {
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: 100%;
+.book:nth-child(even) {
+  background-color: #EEE;
 }
 
-.book .title {
-  font-size: 1.5em;
+.book:nth-child(odd) {
+  background-color: #fff;
+}
+
+.book:hover {
+  background-color: rgb(214, 235, 214);
+}
+
+.books-header {
+  background-color: #333;
+  color: #EEE;
   font-weight: bold;
-  color: #222;
-  word-break: break-word;
 }
 
-.book .meta {
-  font-size: 14px;
-  color: #444;
-  display: block; /* Cambiado a bloque para que cada campo ocupe su propia línea */
-  gap: 8px;
-}
-
-.book .meta > div {
-  word-break: break-word;
-  margin-bottom: 3px;
+.book .title,
+.book .author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .book .puntuacion span {
@@ -79,36 +64,12 @@ input, select {
 }
 
 .book .puntuacion .empty {
-  color: #ccc; /* Estrella vacía (gris claro) */
+  color: #AAA; /* Estrella vacía (gris claro) */
 }
-
-.book .comentario {
-  font-size: 14px;
-  color: #444;
-  word-break: break-word;
-  margin-top: 12px;
-  position: relative;  /* Necesario para el triángulo */
-  background-color: #e0e0e0;  /* Color de fondo de la burbuja */
-  padding: 12px 16px;
-  border-radius: 16px;  /* Bordes redondeados */
-}
-
-.book .comentario::before {
-  content: '';  /* El triángulo */
-  position: absolute;
-  top: -9px;
-  left: 10px;  /* Ajusta la posición del triángulo */
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #e0e0e0;  /* Color de la burbuja */
-}
-
 
 .progreso-container {
-  width: 100%;
-  margin-top: 8px;
+  width: 100px;
+  display: inline-block;
 }
 
 .progreso-barra {
@@ -122,69 +83,4 @@ input, select {
 
 .progreso-barra-relleno {
   height: 100%;
-}
-
-label, select {
-  font-size: 14px;
-  margin-right: 6px;
-}
-
-@media (max-width: 900px) {
-  body {
-    padding: 10px;
-  }
-
-  #book-list {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  }
-
-  .book .title {
-    font-size: 1.3em;
-  }
-
-  .book .meta {
-    font-size: 13px;
-  }
-
-  .book .comentario {
-    font-size: 13px;
-  }
-
-  .stats {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 5px;
-  }
-
-  #book-list {
-    grid-template-columns: 1fr;
-  }
-
-  .book {
-    padding: 12px;
-  }
-
-  .book .title {
-    font-size: 1.2em;
-  }
-
-  .book .meta {
-    font-size: 12px;
-  }
-
-  .book .comentario {
-    font-size: 12px;
-  }
-
-  .stats {
-    font-size: 14px;
-  }
-
-  label, select {
-    font-size: 14px;
-  }
 }

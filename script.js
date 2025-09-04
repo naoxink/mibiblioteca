@@ -57,7 +57,15 @@ async function loadBooks() {
 
 function renderBooks(list) {
   const container = document.getElementById("book-list");
-  container.innerHTML = ""; // Limpiar la lista actual
+  container.innerHTML = `
+    <div class="books-header">
+      <div>Título</div>
+      <div>Autor</div>
+      <div>Puntuación</div>
+      <div>Estado</div>
+      <div>Progreso</div>
+    </div>
+  `; // Limpiar la lista actual
 
   const field = currentSort.field;
   const order = currentSort.asc ? 1 : -1;
@@ -101,20 +109,18 @@ function renderBooks(list) {
     }
 
     div.innerHTML = `
-      <div class="title">${b.titulo}</div>
-      <div class="meta">
-      <div>Autor: ${b.autor || "Desconocido"}</div>
-        <div>Puntuación: <span class="puntuacion">${stars}</span></div>
-        <div>Estado: ${b.estado || "Sin estado"}</div>
-        <div>Progreso: ${b.progreso}%</div>
-        <div class="progreso-container">
-          <div class="progreso-barra">
-            <div class="progreso-barra-relleno" style="width:${b.progreso}%; background:${b.progreso < 30 ? 'tomato' : b.progreso < 90 ? 'gold' : '#4caf50'};"></div>
+        <div class="title" title="${b.titulo}">${b.titulo}</div>
+        <div class="author" title="${b.autor || "Desconocido"}">${b.autor || "Desconocido"}</div>
+        <div class="score" title="${b.puntuacion}/10"><span class="puntuacion">${stars}</span></div>
+        <div class="status">${b.estado || "Sin estado"}</div>
+        <div class="progress">Progreso: ${b.progreso}%
+          <div class="progreso-container">
+            <div class="progreso-barra">
+              <div class="progreso-barra-relleno" style="width:${b.progreso}%; background:${b.progreso < 30 ? 'tomato' : b.progreso < 90 ? 'gold' : '#4caf50'};"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="comentario">${b.comentario || "No hay comentarios."}</div>
-    `;
+    `
     container.appendChild(div);
   });
 }
