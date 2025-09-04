@@ -93,6 +93,8 @@ function renderBooks(list) {
     const div = document.createElement("div");
     div.className = "book";
 
+    if (b.estado === "En curso") div.classList.add("in-progress");
+
     if (!b.progreso) b.progreso = 0;
 
     // Crear la puntuación con estrellas llenas y vacías
