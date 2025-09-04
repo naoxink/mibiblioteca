@@ -281,7 +281,7 @@
   },
   {
     "titulo": "Dioses y mitos del antiguo Egipto",
-    "autor": null,
+    "autor": "Robert A. Armour",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": null,
@@ -289,7 +289,7 @@
   },
   {
     "titulo": "Mitología nórdica",
-    "autor": null,
+    "autor": "Enrique Bernárdez",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": null,
@@ -297,7 +297,7 @@
   },
   {
     "titulo": "Oráculos griegos",
-    "autor": null,
+    "autor": "David Hernández De La Fuente",
     "estado": "Leído",
     "puntuacion": 6,
     "comentario": "A veces se hace muy pesado.",
@@ -305,15 +305,15 @@
   },
   {
     "titulo": "En busca de la felicidad",
-    "autor": null,
+    "autor": "Joseph Campbell",
     "estado": "Leído",
     "puntuacion": 7,
-    "comentario": null,
+    "comentario": "Muy espeso a veces.",
     "progreso": 100
   },
   {
     "titulo": "El discurso del método",
-    "autor": null,
+    "autor": "Descartes",
     "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
@@ -321,7 +321,7 @@
   },
   {
     "titulo": "La Odisea",
-    "autor": null,
+    "autor": "Homero",
     "estado": "Sin leer",
     "puntuacion": null,
     "comentario": null,
@@ -329,7 +329,7 @@
   },
   {
     "titulo": "Santa muerte",
-    "autor": null,
+    "autor": "Varios autores (ed. Titilante)",
     "estado": "Leído",
     "puntuacion": 7,
     "comentario": "Buena calidad y geniales las ilustraciones.",
@@ -337,7 +337,7 @@
   },
   {
     "titulo": "El libro tibetano de los muertos",
-    "autor": null,
+    "autor": "Padmasambhava",
     "estado": "Leído",
     "puntuacion": 7,
     "comentario": "Mucha droja pero bastante interesante.",
@@ -345,7 +345,7 @@
   },
   {
     "titulo": "Conjuras, tierras planas y lagartos",
-    "autor": null,
+    "autor": "Miguel Anómalo",
     "estado": "Leído",
     "puntuacion": 9,
     "comentario": "Teorías flipantes de conspiración.",
@@ -353,7 +353,7 @@
   },
   {
     "titulo": "La mano negra",
-    "autor": null,
+    "autor": "Dr. Javier Tapia",
     "estado": "Leído",
     "puntuacion": 7,
     "comentario": null,
@@ -361,7 +361,7 @@
   },
   {
     "titulo": "Historia de la brujería",
-    "autor": null,
+    "autor": "Francesc Cardona",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": null,
@@ -369,7 +369,7 @@
   },
   {
     "titulo": "Los mitos",
-    "autor": null,
+    "autor": "Joseph Campbell",
     "estado": "Leído",
     "puntuacion": 7,
     "comentario": "Muy espeso en varias ocasiones pero buen contenido.",
@@ -377,15 +377,15 @@
   },
   {
     "titulo": "Divina comedia",
-    "autor": null,
+    "autor": "Dante Alighieri",
     "estado": "Leído parcialmente",
     "puntuacion": null,
-    "comentario": null,
+    "comentario": "La forma de escribir es muy densa y cuesta avanzar. Pero lo retomaré, estoy seguro.",
     "progreso": 15
   },
   {
     "titulo": "El libro de los símbolos",
-    "autor": null,
+    "autor": "Alfonso Serrano Simarro y Álvaro Pascual Chenel",
     "estado": null,
     "puntuacion": null,
     "comentario": "Principalmente es un libro de consulta, no se trata de leerlo secuencualmente.",
@@ -393,7 +393,7 @@
   },
   {
     "titulo": "Ciencia loca",
-    "autor": null,
+    "autor": "Theodore Gray",
     "estado": "Leído",
     "puntuacion": 5,
     "comentario": "Experimentos curiosos pero ninguno es realmente reproducible en casa.",
@@ -401,7 +401,7 @@
   },
   {
     "titulo": "Jurassic Park: la película",
-    "autor": null,
+    "autor": "Joan De Deu",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": "La película, en libro.",
@@ -409,7 +409,7 @@
   },
   {
     "titulo": "Will",
-    "autor": null,
+    "autor": "Will Smith y Mark Manson",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": "Fascinante la vida de Will Smith. Contada por él mismo. Muy recomendable.",
@@ -417,7 +417,7 @@
   },
   {
     "titulo": "La Biblia según Dios",
-    "autor": "@diotuitero",
+    "autor": "@diostuitero",
     "estado": "Leído",
     "puntuacion": 8,
     "comentario": "Resumen bastante preciso de la Biblia contada con un buen sentido del humor.",
@@ -425,7 +425,7 @@
   },
   {
     "titulo": "Crónicas urbanas",
-    "autor": null,
+    "autor": "Manuel Vicent",
     "estado": "Leído",
     "puntuacion": 7,
     "comentario": "Algunas historias son flipantes, otras bueno, no tanto.",
@@ -452,7 +452,7 @@
     "autor": null,
     "estado": "Leído",
     "puntuacion": 9,
-    "comentario": null,
+    "comentario": "Buenísimo, se lee bastante rápido. Mundo fantástico distinto a lo que había leído hasta ahora.",
     "progreso": 100
   },
   {
@@ -497,7 +497,7 @@
   },
   {
     "titulo": "Mistborn: El metal perdido",
-    "autor": null,
+    "autor": "Brandon Sanderson",
     "estado": "En pausa",
     "puntuacion": null,
     "comentario": null,
@@ -521,7 +521,7 @@
   },
   {
     "titulo": "Summa Daemoniaca",
-    "autor": null,
+    "autor": "José Antonio Fortea",
     "estado": "Leído",
     "puntuacion": 9,
     "comentario": "MUY interesante el mundo del exorcismo cristiano desde el punto de vista de un exorcista real.",
@@ -529,7 +529,7 @@
   },
   {
     "titulo": "El libro egipcio de los muertos",
-    "autor": null,
+    "autor": "Plutón ediciones",
     "estado": "En pausa",
     "puntuacion": null,
     "comentario": null,
