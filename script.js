@@ -139,4 +139,23 @@ function renderBooks(list) {
   });
 }
 
+async function showLastModified() {
+  try {
+    const res = await fetch("data.csv", { method: "HEAD" });
+    const lastModified = res.headers.get("Last-Modified");
+    if (lastModified) {
+      const date = new Date(lastModified);
+      const formatted = date.toLocaleString();
+      const infoDiv = document.createElement("div");
+      infoDiv.id = "last-modified";
+      infoDiv.textContent = `Última modificación: ${formatted}`;
+      document.body.appendChild(infoDiv);
+    }
+  } catch (e) {
+    // No mostrar nada si hay error
+  }
+}
+
+showLastModified();
+
 loadBooks();
