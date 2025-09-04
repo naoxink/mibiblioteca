@@ -145,7 +145,7 @@ async function showLastModified() {
     const lastModified = res.headers.get("Last-Modified");
     if (lastModified) {
       const date = new Date(lastModified);
-      const formatted = date.toLocaleString();
+      const formatted = date.toLocaleDateString();
       const infoDiv = document.createElement("div");
       infoDiv.id = "last-modified";
       infoDiv.textContent = `Última modificación: ${formatted}`;
