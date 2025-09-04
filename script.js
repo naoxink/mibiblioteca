@@ -108,10 +108,22 @@ function renderBooks(list) {
       }
     }
 
+    let comentario = "";
+    if (b.comentario) {
+      comentario = `
+        <span class="comentario-icon" title="${b.comentario}" tabindex="0" style="cursor:pointer;">
+          💬
+        </span>
+      `;
+    }
+
     div.innerHTML = `
         <div class="title" title="${b.titulo}">${b.titulo}</div>
         <div class="author" title="${b.autor || "Desconocido"}">${b.autor || "Desconocido"}</div>
-        <div class="score" title="${b.puntuacion}/10"><span class="puntuacion">${stars}</span></div>
+        <div class="score" title="${b.puntuacion}/10">
+          <span class="puntuacion">${stars}</span>
+          ${comentario}
+        </div>
         <div class="status">${b.estado || "Sin estado"}</div>
         <div class="progress">Progreso: ${b.progreso}%
           <div class="progreso-container">

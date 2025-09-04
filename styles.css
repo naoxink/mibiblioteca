@@ -84,3 +84,7 @@ body {
 .progreso-barra-relleno {
   height: 100%;
 }
+
+.comentario-icon {
+  margin-left: 8px;
+}
