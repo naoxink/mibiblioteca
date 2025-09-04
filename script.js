@@ -141,7 +141,7 @@ function renderBooks(list) {
 
 async function showLastModified() {
   try {
-    const res = await fetch("data.csv", { method: "HEAD" });
+    const res = await fetch("data.json", { method: "HEAD" });
     const lastModified = res.headers.get("Last-Modified");
     if (lastModified) {
       const date = new Date(lastModified);
