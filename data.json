@@ -538,10 +538,10 @@
   {
     "titulo": "Mitología hindú",
     "autor": "Javier Tapia",
-    "estado": "En curso",
+    "estado": "En pausa",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 70
+    "progreso": 80
   },
   {
     "titulo": "Por si las voces vuelven",
@@ -550,5 +550,13 @@
     "puntuacion": 9,
     "comentario": "Un libro que me lo leí en un suspiro. Redacción ligera, muy fácil de leer, ameno y con mucho humor aun siendo un tema muy serio.",
     "progreso": 100
+  },
+  {
+    "titulo": "Manual para padres primerizos",
+    "autor": "José María Lloreda",
+    "estado": "En curso",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 1
   }
 ]
