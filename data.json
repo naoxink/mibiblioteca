@@ -538,10 +538,10 @@
   {
     "titulo": "Mitología hindú",
     "autor": "Javier Tapia",
-    "estado": "En pausa",
+    "estado": "En curso",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 80
+    "progreso": 81
   },
   {
     "titulo": "Por si las voces vuelven",
@@ -557,6 +557,6 @@
     "estado": "En curso",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 20
+    "progreso": 23
   }
 ]
