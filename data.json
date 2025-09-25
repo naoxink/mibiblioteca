@@ -538,10 +538,10 @@
   {
     "titulo": "Mitología hindú",
     "autor": "Javier Tapia",
-    "estado": "En curso",
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 90
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Bastante interesante. Me han encantado los mitos y leyendas como broche final.",
+    "progreso": 100
   },
   {
     "titulo": "Por si las voces vuelven",
