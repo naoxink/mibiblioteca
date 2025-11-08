@@ -258,10 +258,10 @@
   {
     "titulo": "Juegos de estado",
     "autor": "Tom Clancy",
-    "estado": "Leído parcialmente",
+    "estado": "En curso",
     "puntuacion": null,
     "comentario": "",
-    "progreso": 2
+    "progreso": 0
   },
   {
     "titulo": "Evangelios apócrifos: tomo 1",
@@ -498,10 +498,10 @@
   {
     "titulo": "Mistborn: El metal perdido",
     "autor": "Brandon Sanderson",
-    "estado": "En curso",
-    "puntuacion": null,
-    "comentario": null,
-    "progreso": 90
+    "estado": "Leído",
+    "puntuacion": 7,
+    "comentario": "Muchos altibajos. Me parece que no tiene una trama central importante hasta practicamente el final",
+    "progreso": 100
   },
   {
     "titulo": "American Gods",
