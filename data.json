@@ -258,7 +258,7 @@
   {
     "titulo": "Juegos de estado",
     "autor": "Tom Clancy",
-    "estado": "En curso",
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": "",
     "progreso": 0
@@ -554,9 +554,17 @@
   {
     "titulo": "Manual para padres primerizos",
     "autor": "José María Lloreda",
-    "estado": "En curso",
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
+  },
+  {
+    "titulo": "No es país para coños",
+    "autor": "Diana López Varela",
+    "estado": "En curso",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 10
   }
 ]
