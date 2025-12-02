@@ -260,8 +260,8 @@
     "autor": "Tom Clancy",
     "estado": "Leído parcialmente",
     "puntuacion": null,
-    "comentario": "",
-    "progreso": 0
+    "comentario": "Lo he intentado un par de veces pero no me engancha.",
+    "progreso": 2
   },
   {
     "titulo": "Evangelios apócrifos: tomo 1",
@@ -565,6 +565,6 @@
     "estado": "En curso",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 80
+    "progreso": 95
   }
 ]
