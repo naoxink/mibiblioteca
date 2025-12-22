@@ -564,7 +564,15 @@
     "autor": "Diana López Varela",
     "estado": "Leído",
     "puntuacion": 6,
-    "comentario": "En ocasiones da demasiados datos y me pierde. Por lo general está bien pero algunas partes son poco interesantes o demasiado cliché."
+    "comentario": "En ocasiones da demasiados datos y me pierde. Por lo general está bien pero algunas partes son poco interesantes o demasiado cliché.",
     "progreso": 100
+  },
+  {
+    "titulo": "la décima sinfonía",
+    "autor": "Joseph Gelinek",
+    "estado": "En curso",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 10
   }
 ]
