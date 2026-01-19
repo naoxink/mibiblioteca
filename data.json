@@ -570,9 +570,17 @@
   {
     "titulo": "La décima sinfonía",
     "autor": "Joseph Gelinek",
-    "estado": "En curso",
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
+  },
+  {
+    "titulo": "Dragon Ball",
+    "autor": "Mundo MangAnime - RBA",
+    "estado": "En curso",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 15
   }
 ]
