@@ -530,7 +530,7 @@
   {
     "titulo": "El libro egipcio de los muertos",
     "autor": "Plutón ediciones",
-    "estado": "En pausa",
+    "estado": "Leído parcialmente",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
@@ -579,8 +579,8 @@
     "titulo": "Dragon Ball",
     "autor": "Mundo MangAnime - RBA",
     "estado": "Leído",
-    "puntuacion": 7,
-    "comentario": null,
+    "puntuacion": 8,
+    "comentario": "Me ha molado bastante. Se me ha hecho corto. Está genial que cuente la historia de todas las sagas. Las curiosidades y referencias a Joseph Campbell son geniales.",
     "progreso": 100
   }
 ]

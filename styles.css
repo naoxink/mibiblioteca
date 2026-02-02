@@ -11,7 +11,7 @@ body {
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 12px; /* reducido para ocupar más ancho */
   flex-direction: column;
 }
 
@@ -92,4 +92,152 @@ body {
 .book.in-progress {
   outline: 2px solid teal;
   border-left: 5px solid teal;
+}
+
+/* Responsive styles */
+.container {
+  width: 100%;
+  max-width: 1400px; /* ocupar casi todo el ancho en pantallas grandes */
+  margin: 0 auto;
+  padding: 0 4px; /* reducir margen lateral */
+} 
+
+/* Controls layout */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.controls label {
+  font-size: 0.9rem;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding: 8px 10px;
+  min-height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  flex: 0 0 auto;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 1.2;
+}
+
+/* Ajustes de ancho para equilibrar visualmente */
+.controls input[type="text"] {
+  flex: 0 0 200px;
+  max-width: 48%;
+}
+.controls select {
+  flex: 0 0 180px;
+  max-width: 32%;
+}
+
+/* Reservar espacio para la flecha */
+.controls select { padding-right: 36px; background-repeat: no-repeat; background-position: right 10px center; }
+
+/* Ajustes de ancho para equilibrar visualmente */
+.controls input[type="text"] {
+  flex: 0 0 240px;
+  max-width: 48%;
+}
+.controls select {
+  flex: 0 0 160px;
+  max-width: 28%;
+}
+
+
+/* Slight visual improvements */
+.book {
+  padding: 10px 12px;
+  border-radius: 0; /* filas tipo tabla */
+  margin-bottom: 0; /* quitar espacio entre filas */
+  border-bottom: 1px solid #e9e9e9; /* separador sutil */
+  box-shadow: none;
+}    
+
+/* Dar a la última fila un borde inferior más pronunciado para cerrar la 'tabla' */
+.book:last-child { border-bottom: 2px solid #e6e6e6; }
+
+.book .puntuacion span { font-size: 16px; }
+
+/* Small-screen layout */
+@media (max-width: 700px) {
+  body {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .controls {
+    gap: 6px;
+    flex-direction: column; /* apilar controles */
+    align-items: stretch;
+  }
+
+  .controls label {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .controls input[type="text"],
+  .controls select {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 9px;
+  }
+
+  .controls select { padding-right: 36px; }
+
+  .books-header {
+    display: none; /* hide header on small screens to save vertical space */
+  }
+
+  #book-list {
+    margin: 10px 0;
+    border: 0;
+  }
+
+  .book {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+  }
+
+  .book .title {
+    font-weight: 600;
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .book .author,
+  .book .status,
+  .book .score,
+  .book .progress {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .progreso-container { width: 100%; display: block; margin-top: 6px; }
+  .progreso-barra { width: 100%; }
+}
+
+/* Medium screens: make columns more balanced */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .book, .books-header {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  }
 }
