@@ -378,10 +378,10 @@
   {
     "titulo": "Divina comedia",
     "autor": "Dante Alighieri",
-    "estado": "Leído parcialmente",
+    "estado": "En curso",
     "puntuacion": null,
     "comentario": "La forma de escribir es muy densa y cuesta avanzar. Pero lo retomaré, estoy seguro.",
-    "progreso": 15
+    "progreso": 3
   },
   {
     "titulo": "El libro de los símbolos",
@@ -578,9 +578,9 @@
   {
     "titulo": "Dragon Ball",
     "autor": "Mundo MangAnime - RBA",
-    "estado": "En curso",
-    "puntuacion": null,
+    "estado": "Leído",
+    "puntuacion": 7,
     "comentario": null,
-    "progreso": 80
+    "progreso": 100
   }
 ]
