@@ -378,7 +378,7 @@
   {
     "titulo": "Divina comedia",
     "autor": "Dante Alighieri",
-    "estado": "En curso",
+    "estado": "En pausa",
     "puntuacion": null,
     "comentario": "La forma de escribir es muy densa y cuesta avanzar. Pero lo retomaré, estoy seguro.",
     "progreso": 12
@@ -582,5 +582,45 @@
     "puntuacion": 8,
     "comentario": "Me ha molado bastante. Se me ha hecho corto. Está genial que cuente la historia de todas las sagas. Las curiosidades y referencias a Joseph Campbell son geniales.",
     "progreso": 100
+  },
+  {
+    "titulo": "Mitología Yoruba",
+    "autor": "Javier Tapia",
+    "estado": "Sin leer",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 0
+  },
+  {
+    "titulo": "Mitología medieval",
+    "autor": "Javier Tapia",
+    "estado": "Sin leer",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 0
+  },
+  {
+    "titulo": "Mitología Árabe",
+    "autor": "Javier Tapia",
+    "estado": "Sin leer",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 0
+  },
+  {
+    "titulo": "Mitología Griega",
+    "autor": "Javier Tapia",
+    "estado": "Sin leer",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 0
+  },
+  {
+    "titulo": "La guerra de los mundos",
+    "autor": "H. G. Wells",
+    "estado": "En curso",
+    "puntuacion": null,
+    "comentario": null,
+    "progreso": 0
   }
 ]
