@@ -91,7 +91,6 @@ body {
 
 .book.in-progress {
   outline: 2px solid teal;
-  border-left: 5px solid teal;
 }
 
 /* Responsive styles */
