@@ -1,3 +1,4 @@
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -5,238 +6,259 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 16px;
-  color: #333;
-  background-color: #f4f4f4;
+  color: #cbd5e1; /* Texto gris claro/azulado para buena lectura */
+  background-color: #0f172a; /* Azul noche profundo */
   display: flex;
-  justify-content: center;
-  padding: 12px; /* reducido para ocupar más ancho */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 12px;
   flex-direction: column;
+  min-height: 100vh;
 }
+
+h1 {
+  color: #fbbf24; /* Dorado acento */
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* Controles de Búsqueda y Ordenación */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #1e293b; /* Azul un poco más claro para separar del fondo */
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.controls label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #f8fafc;
+  flex: 1 1 auto;
+  min-height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s;
+}
+
+/* Reservar espacio para la flecha del select */
+.controls select { 
+  padding-right: 36px; 
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; 
+  background-position: right 12px center; 
+  background-size: 12px auto;
+}
+
+.controls input[type="text"]:focus,
+.controls select:focus {
+  outline: none;
+  border-color: #fbbf24; /* Brillo dorado al hacer foco */
+}
+
+/* Contenedor Principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+} 
 
 #book-list {
-  margin: 10px;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  background-color: #1e293b;
 }
 
+/* Grid de Filas */
 .book, .books-header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.5fr;
   align-items: center;
   width: 100%;
   text-align: left;
-  gap: 20px; /* Espacio entre columnas */
-  padding: 10px;
-}
-
-.book:nth-child(even) {
-  background-color: #EEE;
-}
-
-.book:nth-child(odd) {
-  background-color: #fff;
-}
-
-.book:hover {
-  background-color: rgb(214, 235, 214);
+  gap: 15px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #334155;
+  transition: background-color 0.2s;
 }
 
 .books-header {
-  background-color: #333;
-  color: #EEE;
-  font-weight: bold;
+  background-color: #0f172a;
+  color: #fbbf24;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #fbbf24; /* Línea separadora principal dorada */
 }
 
-.book .title,
-.book .author {
+.book:last-child {
+  border-bottom: none;
+}
+
+.book:hover {
+  background-color: #334155;
+}
+
+/* Estados e Identificadores */
+.book.in-progress {
+  border-left: 3px solid #fbbf24; /* Marca lateral dorada para los que estás leyendo */
+}
+
+.book .title {
+  color: #f8fafc; /* Blanco más brillante para destacar el título */
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.book .author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #94a3b8;
+}
+
+/* Puntuación (Estrellas) */
 .book .puntuacion span {
   font-size: 18px;
 }
 
 .book .puntuacion .filled {
-  color: #ffcc00; /* Estrella llena (color dorado) */
+  color: #fbbf24; /* Estrella llena (Dorado) */
 }
 
 .book .puntuacion .empty {
-  color: #AAA; /* Estrella vacía (gris claro) */
-}
-
-.progreso-container {
-  width: 100px;
-  display: inline-block;
-}
-
-.progreso-barra {
-  border: 1px solid #ddd;
-  background: #f7f7f7;
-  border-radius: 3px;
-  height: 8px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.progreso-barra-relleno {
-  height: 100%;
+  color: #475569; /* Estrella vacía (Gris oscuro) */
 }
 
 .comentario-icon {
   margin-left: 8px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
 
-.book.in-progress {
-  outline: 2px solid teal;
+.comentario-icon:hover {
+  opacity: 1;
 }
 
-/* Responsive styles */
-.container {
+/* Barra de Progreso */
+.progreso-container {
   width: 100%;
-  max-width: 1400px; /* ocupar casi todo el ancho en pantallas grandes */
-  margin: 0 auto;
-  padding: 0 4px; /* reducir margen lateral */
-} 
-
-/* Controls layout */
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 1em;
+  max-width: 100px;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
-.controls label {
-  font-size: 0.9rem;
+.progreso-barra {
+  background: #0f172a; /* Fondo de barra oscuro */
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
 }
 
-.controls input[type="text"],
-.controls select {
-  padding: 8px 10px;
-  min-height: 40px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  background: #fff;
-  flex: 0 0 auto;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  line-height: 1.2;
+.progreso-barra-relleno {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
 }
 
-/* Ajustes de ancho para equilibrar visualmente */
-.controls input[type="text"] {
-  flex: 0 0 200px;
-  max-width: 48%;
-}
-.controls select {
-  flex: 0 0 180px;
-  max-width: 32%;
-}
-
-/* Reservar espacio para la flecha */
-.controls select { padding-right: 36px; background-repeat: no-repeat; background-position: right 10px center; }
-
-/* Ajustes de ancho para equilibrar visualmente */
-.controls input[type="text"] {
-  flex: 0 0 240px;
-  max-width: 48%;
-}
-.controls select {
-  flex: 0 0 160px;
-  max-width: 28%;
-}
-
-
-/* Slight visual improvements */
-.book {
-  padding: 10px 12px;
-  border-radius: 0; /* filas tipo tabla */
-  margin-bottom: 0; /* quitar espacio entre filas */
-  border-bottom: 1px solid #e9e9e9; /* separador sutil */
-  box-shadow: none;
-}    
-
-/* Dar a la última fila un borde inferior más pronunciado para cerrar la 'tabla' */
-.book:last-child { border-bottom: 2px solid #e6e6e6; }
-
-.book .puntuacion span { font-size: 16px; }
-
-/* Small-screen layout */
-@media (max-width: 700px) {
+/* Diseño Móvil (Tarjetas de Lectura) */
+@media (max-width: 768px) {
   body {
-    padding: 8px;
-    font-size: 15px;
+    padding: 12px 8px;
   }
 
   .controls {
-    gap: 6px;
-    flex-direction: column; /* apilar controles */
+    flex-direction: column;
     align-items: stretch;
+    padding: 12px;
   }
 
   .controls label {
-    width: 100%;
-    margin-bottom: 2px;
+    margin-bottom: -6px;
   }
-
-  .controls input[type="text"],
-  .controls select {
-    flex: 1 1 100%;
-    max-width: 100%;
-    width: 100%;
-    padding: 9px;
-  }
-
-  .controls select { padding-right: 36px; }
 
   .books-header {
-    display: none; /* hide header on small screens to save vertical space */
+    display: none; /* Ocultamos la cabecera tipo tabla en móvil */
   }
 
   #book-list {
-    margin: 10px 0;
-    border: 0;
+    background: transparent;
+    border: none;
   }
 
   .book {
     grid-template-columns: 1fr;
-    gap: 6px;
-    padding: 8px 10px;
-    margin-bottom: 10px;
-    border-radius: 0;
-    border: 1px solid rgba(0, 0, 0, .1);
+    gap: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+  }
+
+  .book.in-progress {
+    border-left: 4px solid #fbbf24;
   }
 
   .book .title {
-    font-weight: 600;
-    white-space: normal;
-    font-size: 1rem;
+    font-size: 1.15rem;
+    white-space: normal; /* Permitimos que el título salte de línea */
+    color: #fbbf24; /* Título dorado en móvil para jerarquía */
   }
 
   .book .author,
   .book .status,
-  .book .score,
-  .book .progress {
+  .book .score {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    align-items: center;
     font-size: 0.95rem;
-    white-space: nowrap;
   }
 
-  .progreso-container { width: 100%; display: block; margin-top: 6px; }
-  .progreso-barra { width: 100%; }
-}
+  /* Etiquetas inyectadas por CSS para contexto en móvil */
+  .book .author::before { content: "Autor:"; color: #94a3b8; font-size: 0.85rem; }
+  .book .score::before { content: "Nota:"; color: #94a3b8; font-size: 0.85rem; }
+  .book .status::before { content: "Estado:"; color: #94a3b8; font-size: 0.85rem; }
+  
+  .book .progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px dashed #334155;
+  }
 
-/* Medium screens: make columns more balanced */
-@media (min-width: 701px) and (max-width: 1000px) {
-  .book, .books-header {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  .progreso-container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
   }
 }

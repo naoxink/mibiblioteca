@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "El aliento de los dioses",
+    "autor": "Brandon Sanderson",
+    "estado": "En curso",
+    "puntuacion": 0,
+    "paginas": 709,
+    "paginaActual": 19,
+    "comentario": ""
+  },
+  {
     "titulo": "El arte de la intrusión",
     "autor": "Kevin D. Mitnick y William L. Simon",
     "estado": "Leído",
@@ -602,10 +611,10 @@
   {
     "titulo": "Mitología Árabe",
     "autor": "Javier Tapia",
-    "estado": "Sin leer",
+    "estado": "En pausa",
     "puntuacion": null,
     "comentario": null,
-    "progreso": 0
+    "progreso": 25
   },
   {
     "titulo": "Mitología Griega",

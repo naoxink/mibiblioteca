@@ -67,6 +67,16 @@ function renderBooks(list) {
     </div>
   `; // Limpiar la lista actual
 
+  // --- LÓGICA DE PROGRESO AUTOMÁTICO (Antes de ordenar) ---
+  list.forEach(b => {
+    if (b.paginas && b.paginaActual) {
+      // Calcula el porcentaje y lo redondea para evitar decimales infinitos
+      b.progreso = Math.round((b.paginaActual / b.paginas) * 100);
+    } else if (!b.progreso) {
+      b.progreso = 0;
+    }
+  });
+
   const field = currentSort.field;
   const order = currentSort.asc ? 1 : -1;
 
@@ -95,18 +105,16 @@ function renderBooks(list) {
 
     if (b.estado === "En curso") div.classList.add("in-progress");
 
-    if (!b.progreso) b.progreso = 0;
-
     // Crear la puntuación con estrellas llenas y vacías
-    const filledStars = Math.floor(b.puntuacion);  // Número de estrellas llenas
-    const totalStars = 10;  // Total de estrellas posibles
+    const filledStars = Math.floor(b.puntuacion || 0);
+    const totalStars = 10;
 
     let stars = '';
     for (let i = 0; i < totalStars; i++) {
       if (i < filledStars) {
-        stars += '<span class="filled">★</span>';  // Estrella llena
+        stars += '<span class="filled">★</span>';
       } else {
-        stars += '<span class="empty">☆</span>';  // Estrella vacía
+        stars += '<span class="empty">☆</span>';
       }
     }
 
@@ -119,18 +127,24 @@ function renderBooks(list) {
       `;
     }
 
+    let infoPaginas = "";
+    if (b.paginas && b.paginaActual) {
+      infoPaginas = `title="Página ${b.paginaActual} de ${b.paginas}"`;
+    }
+
     div.innerHTML = `
         <div class="title" title="${b.titulo}">${b.titulo}</div>
         <div class="author" title="${b.autor || "Desconocido"}">${b.autor || "Desconocido"}</div>
-        <div class="score" title="${b.puntuacion}/10">
+        <div class="score" title="${b.puntuacion || 0}/10">
           <span class="puntuacion">${stars}</span>
-          ${comentario}
         </div>
-        <div class="status">${b.estado || "Sin estado"}</div>
-        <div class="progress">Progreso: ${b.progreso}%
-          <div class="progreso-container">
+        <div class="status">${b.estado || "Sin estado"}
+          ${comentario}</div>
+        <div class="progress" ${infoPaginas} style="display: flex; align-items: center; gap: 10px; white-space: nowrap;">
+          <span>Progreso: <strong style="color: #fbbf24;">${b.progreso}%</strong></span>
+          <div class="progreso-container" style="width: 90px; margin-left: 0;">
             <div class="progreso-barra">
-              <div class="progreso-barra-relleno" style="width:${b.progreso}%; background:${b.progreso < 30 ? 'tomato' : b.progreso < 90 ? 'gold' : '#4caf50'};"></div>
+              <div class="progreso-barra-relleno" style="width:${b.progreso}%; background: #fbbf24;"></div>
             </div>
           </div>
         </div>
