@@ -1,11 +1,20 @@
 [
   {
+    "titulo": "Elantris",
+    "autor": "Brandon Sanderson",
+    "estado": "En cola",
+    "puntuacion": 0,
+    "paginas": 783,
+    "paginaActual": 0,
+    "comentario": ""
+  },
+  {
     "titulo": "El aliento de los dioses",
     "autor": "Brandon Sanderson",
     "estado": "En curso",
     "puntuacion": 0,
     "paginas": 709,
-    "paginaActual": 306,
+    "paginaActual": 326,
     "comentario": ""
   },
   {
