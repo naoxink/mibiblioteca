@@ -14,7 +14,7 @@
     "estado": "En curso",
     "puntuacion": 0,
     "paginas": 709,
-    "paginaActual": 363,
+    "paginaActual": 420,
     "comentario": ""
   },
   {
@@ -52,7 +52,7 @@
   {
     "titulo": "La historia de tu vida",
     "autor": "Ted Chiang",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": 4,
     "comentario": "La única historia que más me ha llamado ha sido la famosa por la película (La llegada).",
     "progreso": 40
@@ -76,7 +76,7 @@
   {
     "titulo": "La rebelión de Lucifer",
     "autor": "J.J. Benítez",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": 4,
     "comentario": "Comienza muy bien pero se le va yendo la cabeza con una droga máxima que deja de interesarme.",
     "progreso": 30
@@ -276,7 +276,7 @@
   {
     "titulo": "Juegos de estado",
     "autor": "Tom Clancy",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": "Lo he intentado un par de veces pero no me engancha.",
     "progreso": 2
@@ -284,7 +284,7 @@
   {
     "titulo": "Evangelios apócrifos: tomo 1",
     "autor": "Anónimo (Ed. Humanitas, S.L.)",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": "",
     "progreso": 20
@@ -332,7 +332,7 @@
   {
     "titulo": "El discurso del método",
     "autor": "Descartes",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": null,
     "progreso": 5
@@ -532,7 +532,7 @@
   {
     "titulo": "La Biblia",
     "autor": null,
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": null,
     "progreso": 5
@@ -548,7 +548,7 @@
   {
     "titulo": "El libro egipcio de los muertos",
     "autor": "Plutón ediciones",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
@@ -572,7 +572,7 @@
   {
     "titulo": "Manual para padres primerizos",
     "autor": "José María Lloreda",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
@@ -588,7 +588,7 @@
   {
     "titulo": "La décima sinfonía",
     "autor": "Joseph Gelinek",
-    "estado": "Leído parcialmente",
+    "estado": "Abandonado",
     "puntuacion": null,
     "comentario": null,
     "progreso": 30
