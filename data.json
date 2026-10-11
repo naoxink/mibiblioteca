@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Breaking Bad: la metamorfosis de Walter White",
+    "autor": "Salvat",
+    "estado": "En curso",
+    "puntuacion": 0,
+    "paginas": 204,
+    "paginaActual": 99,
+    "comentario": ""
+  },
+  {
     "titulo": "Elantris",
     "autor": "Brandon Sanderson",
     "estado": "En cola",
@@ -11,11 +20,11 @@
   {
     "titulo": "El aliento de los dioses",
     "autor": "Brandon Sanderson",
-    "estado": "En curso",
-    "puntuacion": 0,
+    "estado": "Leído",
+    "puntuacion": 7,
     "paginas": 709,
-    "paginaActual": 623,
-    "comentario": ""
+    "paginaActual": 709,
+    "comentario": "Hay un momento que empieza a hacerse pesado en el sentido que parece que en todo el libro no va a ocurrir nada impresionante, pero esto cambia en las últimas páginas y te deja loco."
   },
   {
     "titulo": "El arte de la intrusión",
